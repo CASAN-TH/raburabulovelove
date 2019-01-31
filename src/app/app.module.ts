@@ -10,12 +10,14 @@ import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './pages/home/home.component';
 import { ComponentsModule } from './components/components.module';
 import { SettingsComponent } from './pages/settings/settings.component';
+import { ProductComponent } from './pages/product/product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SettingsComponent
+    SettingsComponent,
+    ProductComponent
   ],
   imports: [
     BrowserAnimationsModule,
