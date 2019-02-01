@@ -35,8 +35,8 @@ export class HomeComponent implements OnInit {
       console.log("datalogin Facebook : ", this.user);
       window.localStorage.setItem('@user', JSON.stringify(this.user));
       this.loggedIn = (user != null);
-
     });
+    this.saveUser();
   }
   saveUser() {
     try {
