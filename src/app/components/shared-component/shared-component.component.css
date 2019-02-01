@@ -12,3 +12,11 @@
 .disble-1{
     visibility: hidden !important;
 }
+
+.bg-btn-facebook{
+    background-color: #3b5998;
+}
+
+.font-btn{
+    color: white;
+}

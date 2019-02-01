@@ -1,0 +1,26 @@
+.center{
+    text-align: center;
+}
+
+.size-image{
+    width: 65%;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.font-header{
+    font-size: 3vw
+}
+
+.border-image{
+    border: solid 1px #e2e2e2;
+    border-radius: 2%
+}
+
+.full-width {
+    width: 100%;
+}
+
+.height-input {
+    height: 20vw;
+}
