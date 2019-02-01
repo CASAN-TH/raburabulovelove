@@ -13,9 +13,7 @@ export class ServiceApiService {
   ) { }
   private authorizationHeader() {
     // console.log(token);
-    let headers: HttpHeaders = new HttpHeaders();
-    headers = headers.append('Accept', 'application/json');
-    headers = headers.append('zumo-api-version', '2.0.0');;
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json; charset=utf-8' });
     return headers;
   }
 
