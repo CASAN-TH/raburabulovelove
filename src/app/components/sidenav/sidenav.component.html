@@ -5,14 +5,16 @@
   </div>
   <mat-list class="menu-list">
     <h3 mat-subheader class="subheader">Menu</h3>
-    <!-- <mat-list-item class="menu-item" [ngClass]="{'menu-item-active': activeRoute === ''}" (click)="openPage('')">
+    <mat-list-item class="menu-item" [ngClass]="{'menu-item-active': activeRoute === ''}" (click)="openPage('')">
       <mat-icon mat-list-icon svgIcon="home-outline"></mat-icon>
       <h4 mat-line>Home</h4>
     </mat-list-item>
+
     <mat-list-item class="menu-item" [ngClass]="{'menu-item-active': activeRoute === '/product'}" (click)="openPage('/product')">
       <mat-icon mat-list-icon svgIcon="home-outline"></mat-icon>
       <h4 mat-line>Product</h4>
-    </mat-list-item> -->
+    </mat-list-item>
+
     <mat-list-item class="menu-item" [ngClass]="{'menu-item-active': activeRoute === '/settings'}" (click)="openPage('/settings')">
       <mat-icon mat-list-icon svgIcon="settings-outline"></mat-icon>
       <h4 mat-line>Settings</h4>
