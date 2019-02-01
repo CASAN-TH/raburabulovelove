@@ -12,7 +12,7 @@
     <span class="example-spacer"></span>
     <div *ngIf="data">
       <span class="profile">
-        <img src="{{photoUrl}}">
+        <img *ngIf="data && data.photoUrl" src="{{data.photoUrl}}">
         <span>&nbsp;{{data.name}}</span>
       </span>
 
