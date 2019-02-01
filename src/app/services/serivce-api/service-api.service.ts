@@ -13,7 +13,7 @@ export class ServiceApiService {
   ) { }
   private authorizationHeader() {
     // console.log(token);
-    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json; charset=utf-8' });
     return headers;
   }
 
