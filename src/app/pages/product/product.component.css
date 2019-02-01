@@ -22,5 +22,13 @@
 }
 
 .height-input {
-    height: 20vw;
+    height: 15vw;
+}
+
+.word-wrap {
+    word-wrap: break-word;
+}
+
+.scroll-detail {
+    overflow: auto;
 }

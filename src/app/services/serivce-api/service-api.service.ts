@@ -21,7 +21,7 @@ export class ServiceApiService {
   }
 
   getProdById(_id) {
-    return this.http.get(environment.apiUrl + '/api/productsrabu', _id).toPromise()
+    return this.http.get(environment.apiUrl + '/api/productsrabu/' + _id).toPromise()
   }
 
 
