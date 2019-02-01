@@ -14,11 +14,11 @@ const routes: Routes = [{
   component: HomeComponent
 },
 {
-  path: 'settings',
+  path: 'select-product',
   component: SettingsComponent
 },
 {
-  path: 'product',
+  path: 'product-detail',
   component: ProductComponent
 }];
 
