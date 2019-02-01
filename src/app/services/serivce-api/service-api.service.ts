@@ -18,7 +18,7 @@ export class ServiceApiService {
   }
 
   saveUser(body) {
-    return this.http.post(environment.apiUrl + '/api/auth/signin/', body, { headers: this.authorizationHeader() }).toPromise()
+    return this.http.post(environment.apiUrl + '/api/auth/signin', body, { headers: this.authorizationHeader() }).toPromise()
   }
 
   sigup(body) {
