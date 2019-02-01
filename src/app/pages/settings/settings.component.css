@@ -1,9 +1,15 @@
 .font-header{
-    font-size: 3vw
+    font-size: 3vw;
+    font-family: 'segoe_print', 'arial', sans-serif;
+}
+
+@font-face {
+    font-family: segoe_print;
+    src: url('../../../assets/font/segoe_print.ttf') format("opentype");
 }
 
 .size-image{
-    width: 45%;
+    width: 47%;
     height: 20vw;
     object-fit: cover;
 }
@@ -23,3 +29,14 @@
     border: solid 1px #e2e2e2;
     border-radius: 2%
 }
+
+.full-width{
+    width: 100%;
+}
+
+.color-font {
+    color: #d60045;
+}
+
+
+

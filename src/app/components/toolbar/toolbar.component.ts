@@ -18,7 +18,17 @@ export class ToolbarComponent implements OnInit {
     this.onResizeDisplay();
   }
 
+  data: any;
+
   ngOnInit() {
+  }
+
+  ngDoCheck() {
+    const user = window.localStorage.getItem('@user');
+    if (user) {
+      this.data = user;
+      console.log(this.data);
+    }
   }
 
   onResizeDisplay() {
