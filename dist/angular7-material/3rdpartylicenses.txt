@@ -390,8 +390,6 @@ MIT
 @angular/router
 MIT
 
-@angular/material/form-field
-
 ngx-facebook
 MIT
 The MIT License (MIT)
