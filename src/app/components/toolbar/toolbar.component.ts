@@ -19,14 +19,16 @@ export class ToolbarComponent implements OnInit {
   }
 
   data: any;
+  checkUser: Boolean = false;
 
   ngOnInit() {
   }
 
   ngDoCheck() {
     const user = window.localStorage.getItem('@user');
-    if (user) {
+    if (user || !this.checkUser) {
       this.data = user;
+      this.checkUser = true;
       console.log(this.data);
     }
   }
