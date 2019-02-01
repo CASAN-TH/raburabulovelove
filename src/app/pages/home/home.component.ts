@@ -20,8 +20,6 @@ export class HomeComponent implements OnInit {
 
   signInWithFB(): void {
     this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
-
-    
   }
 
   loginFacebook(){

@@ -11,13 +11,19 @@ import { HomeComponent } from './pages/home/home.component';
 import { ComponentsModule } from './components/components.module';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { ProductComponent } from './pages/product/product.component';
-import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
-import { GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider} from "angularx-social-login";
+import { SocialLoginModule, AuthServiceConfig, LoginOpt } from "angularx-social-login";
+import { GoogleLoginProvider, FacebookLoginProvider, LinkedInLoginProvider } from "angularx-social-login";
+
+const fbLoginOptions: LoginOpt = {
+  scope: 'pages_messaging,pages_messaging_subscriptions,email,pages_show_list,manage_pages',
+  return_scopes: true,
+  enable_profile_selector: true
+};
 
 let config = new AuthServiceConfig([
   {
     id: FacebookLoginProvider.PROVIDER_ID,
-    provider: new FacebookLoginProvider("Facebook-App-Id")
+    provider: new FacebookLoginProvider("391466811398230", fbLoginOptions)
   }
 ]);
 
