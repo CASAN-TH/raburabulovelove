@@ -18,11 +18,11 @@ export class ServiceApiService {
   }
 
   saveUser(body) {
-    return this.http.post(environment.apiUrl + '/api/auth/signin', body, { headers: this.authorizationHeader() }).toPromise()
+    return this.http.post('http://13.250.121.197/api/auth/signin', body, { headers: this.authorizationHeader() }).toPromise()
   }
 
   sigup(body) {
-    return this.http.post(environment.apiUrl + '/api/auth/signup', body).toPromise()
+    return this.http.post('http://13.250.121.197/api/auth/signup', body, { headers: this.authorizationHeader() }).toPromise()
 
   }
 
