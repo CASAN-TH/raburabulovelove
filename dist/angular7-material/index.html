@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Angular7Material</title>
@@ -8,8 +9,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="styles.8dfb94231e8b0bb54798.css"></head>
+  <link rel="stylesheet" href="styles.8dfb94231e8b0bb54798.css">
+</head>
+
 <body>
   <app-root></app-root>
-<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.17718cb3d566c093498e.js"></script><script type="text/javascript" src="main.9cbcac48b410d1d1fc9a.js"></script></body>
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '217854369152043',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v3.2'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script>
+  <script type="text/javascript" src="polyfills.17718cb3d566c093498e.js"></script>
+  <script type="text/javascript" src="main.afe1d585408ca5f0e181.js"></script>
+</body>
+
 </html>
