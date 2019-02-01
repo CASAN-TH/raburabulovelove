@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   environment: "dev",
   appName: "raburabulovelove-web",
-  apiUrl: ""
+  apiUrl: "3.250.121.19"
 };
 
 /*
