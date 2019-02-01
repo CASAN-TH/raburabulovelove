@@ -6,12 +6,14 @@ import { MaterialModule } from '../material/material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
+import { SharedComponentComponent } from './shared-component/shared-component.component';
 
 @NgModule({
   declarations: [
     SidenavComponent,
     ToolbarComponent,
-    FooterComponent
+    FooterComponent,
+    SharedComponentComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
   exports: [
     SidenavComponent,
     ToolbarComponent,
-    FooterComponent
+    FooterComponent,
+    SharedComponentComponent
   ]
 })
 export class ComponentsModule { }

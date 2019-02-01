@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ComponentsModule } from './components/components.module';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { ProductComponent } from './pages/product/product.component';
+import { FacebookModule } from 'ngx-facebook';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProductComponent } from './pages/product/product.component';
     BrowserAnimationsModule,
     BrowserModule,
     MaterialModule,
-    ComponentsModule,
+    ComponentsModule, 
+    FacebookModule.forRoot(),
     AppRoutingModule,
     HttpClientModule
   ],
