@@ -16,6 +16,11 @@ export class ServiceApiService {
     return this.http.post(environment.apiUrl + '/api/auth/signin', body).toPromise()
   }
 
+  sigup(body){
+    return this.http.post(environment.apiUrl + '/api/auth/signup', body).toPromise()
+
+  }
+  
   getProd() {
     return this.http.get(environment.apiUrl + '/api/productsrabu').toPromise()
   }
