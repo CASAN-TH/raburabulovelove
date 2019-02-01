@@ -1,23 +1,27 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="color-header">
   <mat-toolbar-row>
-    <button *ngIf="isMenuIcon" mat-icon-button (click)="sidenavService.openNav()">
+    <!-- <button *ngIf="isMenuIcon" mat-icon-button (click)="sidenavService.openNav()">
       <mat-icon>menu</mat-icon>
     </button>
     <span class="pl-5" *ngIf="!isMenuIcon">Angular7 Material</span>
+    <span class="example-spacer"></span> -->
+    <div class="pl-5">
+      <img class="image-style" src="https://res.cloudinary.com/dyiuidzsc/image/upload/v1548991271/Rabu%20Rabu/perfect%20lips/LOGO-RABU.png"
+        alt="">
+    </div>
     <span class="example-spacer"></span>
-
-
-    <div>
-      <span class="profile" [matMenuTriggerFor]="profile">
-        <img src="./assets/profile.jpeg">
-        <span>&nbsp; Mr. John Doe</span>
+    <div *ngIf="data">
+      <span class="profile">
+        <img src="{{photoUrl}}">
+        <span>&nbsp;{{data.name}}</span>
       </span>
-      <mat-menu #profile="matMenu">
+
+      <!-- <mat-menu #profile="matMenu">
         <button mat-menu-item>
           <mat-icon svgIcon="lock-outline"></mat-icon>
           <span>Log out</span>
         </button>
-      </mat-menu>
+      </mat-menu> -->
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
