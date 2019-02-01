@@ -41,6 +41,7 @@ export class HomeComponent implements OnInit {
   saveUser() {
     try {
       let dataUser = JSON.parse(window.localStorage.getItem('@user'));
+      console.log(dataUser);
       let data = {
         username: dataUser.email ? dataUser.email : dataUser.firstName + dataUser.lastName,
         password: 'P@ssw0rd'
